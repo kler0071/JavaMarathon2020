@@ -8,16 +8,16 @@ public class Task3 {
 
         int i = 0;
         while (i < 5) {
-
             int a = scanner.nextInt();
             int b = scanner.nextInt();
+
+            i++;
+
             if (b == 0) {
                 System.out.println("Деление на 0");
                 continue;
             }
-            double c = a / b;
-            System.out.println(c);
-            i++;
+            System.out.println(a / b);
         }
     }
 }

@@ -12,8 +12,7 @@ public class Task2 {
             if (b == 0) {
                 break;
             }
-            double c = a / b;
-            System.out.println(c);
+            System.out.println(a / b);
         }
     }
 }
