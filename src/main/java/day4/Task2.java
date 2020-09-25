@@ -19,12 +19,28 @@ public class Task2 {
         }
         System.out.println("max: " + max);
 
-        int min = 0;
+        int min = 10000;
         for (int number : mass) {
             if (number < min) {
                 min = number;
             }
         }
         System.out.println("min: " + min);
+
+        int counter = 0;
+        for (int element : mass) {
+            if (element % 10 == 0) {
+                counter++;
+            }
+        }
+        System.out.println("0: " + counter);
+
+        int sum = 0;
+        for (int element : mass) {
+            if (element % 10 == 0) {
+                sum += element;
+            }
+        }
+        System.out.println("sum: " + sum);
     }
 }
