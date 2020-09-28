@@ -5,7 +5,7 @@ public class Airplane {
     private int year;
     private double length;
     private double weight;
-    private double fuel = 0;
+    private double fuel;
 
     public void setYear(int year) {
         this.year = year;
@@ -24,6 +24,7 @@ public class Airplane {
         this.year = year;
         this.length = length;
         this.weight = weight;
+        this.fuel = 0;
     }
 
     public void info() {
@@ -31,7 +32,7 @@ public class Airplane {
     }
 
     public void fillUp(double fuel) {
-        this.fuel = fuel;
+        this.fuel += fuel;
     }
 }
 
