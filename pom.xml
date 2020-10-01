@@ -13,7 +13,6 @@
         <maven.compiler.source>1.11</maven.compiler.source>
     </properties>
 
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
@@ -29,8 +28,6 @@
             <artifactId>beaninject</artifactId>
             <version>0.9</version>
         </dependency>
-
-
-
+        
     </dependencies>
 </project>
