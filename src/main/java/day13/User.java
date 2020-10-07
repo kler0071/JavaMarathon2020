@@ -25,10 +25,9 @@ public class User {
     }
 
     public boolean isSubscribed(User user) {
-        for (User currentUser:subscriptions) {
-            if (currentUser.getUsername().equals(user.getUsername())){
+        for (int i = 0; i < subscriptions.size(); i++) {
+            if (subscriptions.contains(user))
                 return true;
-            }
         }
         return false;
     }

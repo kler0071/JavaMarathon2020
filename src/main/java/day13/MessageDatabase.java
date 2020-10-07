@@ -11,18 +11,15 @@ public class MessageDatabase {
     }
 
     public static List<Message> getMessages() {
-        List<Message> list = new ArrayList<>();
-        for (Message mess : messages) {
-            list.add(mess);
-        }
-        return list;
+        return messages;
     }
 
     public static void showDialog(User u1, User u2) {
         for (Message m : messages) {
-            if (m.getSender() == u1 & m.getReceiver() == u2 || m.getSender() == u2 & m.getReceiver() == u1) {
+            if (m.getSender().equals(u1) & m.getReceiver().equals(u2) || m.getSender().equals(u2) & m.getReceiver().equals(u1)) {
                 System.out.println(m.getSender() + ": " + m.getText());
             }
         }
     }
+
 }
