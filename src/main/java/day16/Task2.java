@@ -11,12 +11,12 @@ import java.util.Scanner;
 public class Task2 {
     public static void printResult(File file) throws FileNotFoundException {
         List<Double> list = new ArrayList<>();
-        Scanner scanner2 = new Scanner(file);
-        while (scanner2.hasNextDouble()) {
-            double number = scanner2.nextDouble();
+        Scanner scanner = new Scanner(file);
+        while (scanner.hasNextDouble()) {
+            double number = scanner.nextDouble();
             list.add(number);
         }
-        scanner2.close();
+        scanner.close();
 
         double sum = 0;
         for (Double number : list) {
@@ -37,15 +37,15 @@ public class Task2 {
 
         printWriter1.close();
 
-        Scanner scanner1 = new Scanner(file1);
+        Scanner scanner = new Scanner(file1);
         File file2 = new File("file2.txt");
         PrintWriter printWriter2 = new PrintWriter(file2);
 
         int sum = 0;
         int counter = 0;
 
-        while (scanner1.hasNextInt()) {
-            sum += scanner1.nextInt();
+        while (scanner.hasNextInt()) {
+            sum += scanner.nextInt();
             counter++;
 
             if (counter == 20) {
