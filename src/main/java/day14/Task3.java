@@ -7,8 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Task3 {
-    public static List<Person> parseFileToObjList() {
-        File file = new File("src/main/java/day14/people");
+    public static List<Person> parseFileToObjList(File file) {
         List<Person> people = new ArrayList<>();
 
         try {
@@ -39,6 +38,7 @@ public class Task3 {
 
 
     public static void main(String[] args) {
-        System.out.println(parseFileToObjList());
+        File file = new File("src/main/java/day14/people");
+        System.out.println(parseFileToObjList(file));
     }
 }

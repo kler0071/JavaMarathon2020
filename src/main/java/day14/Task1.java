@@ -21,7 +21,7 @@ public class Task1 {
 
             sc.close();
 
-            if (counter < 10 || counter > 10) {
+            if (counter !=10) {
                 try {
                     throw new IOException();
                 } catch (IOException e) {

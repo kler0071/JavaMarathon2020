@@ -7,12 +7,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Task2 {
-    public static List<String> parseFileToStringList() {
-        File file1 = new File("src/main/java/day14/people");
+    public static List<String> parseFileToStringList(File file) {
         List<String> list = new ArrayList<>();
 
         try {
-            Scanner scanner = new Scanner(file1);
+            Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String person = scanner.nextLine();
                 String[] mass = person.split(" ");
@@ -35,6 +34,7 @@ public class Task2 {
 
 
     public static void main(String[] args) {
-        System.out.println(parseFileToStringList());
+        File file = new File("src/main/java/day14/people");
+        System.out.println(parseFileToStringList(file));
     }
 }
